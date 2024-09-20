@@ -1,0 +1,63 @@
+<html>
+<head><style>
+input[type=text], select {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=textarea], select {
+  width: 50%;
+  height:29%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=number], select {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 10%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a055;
+}
+
+
+</style><head>
+<body style="background-color:powderblue;" ><h3>click to submit your form</h3>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+Firstname: <p>
+<input type="text" firstname="fname"><p/>
+Lastname:	<p><input type="text" firstname="fname"></p>
+Address: <p><input type="text" lasttname="lname"></p>
+Email: <p><input type="text" email="email"></p>
+Phone Number: <p><input type="number" phone="phone"></p>
+country <p><input type="text" country="country"></p>
+Meassages <p> 
+ <textarea type ="messages" name="messages" rows="5" cols="20">Please type your messages here </textarea>
+<BR>
+<input type="submit" value="Submit">
+</form></body>
+</html>
